@@ -63,7 +63,7 @@ var WildRydes = window.WildRydes || {};
             Value: email
         });
 
-        userPool.signUp(toUsername(email), password, [attributeName, attributeEmail], null,
+        userPool.signUp(email, password, [attributeName, attributeEmail], null,
             function signUpCallback(err, result) {
                 if (!err) {
                     onSuccess(result);
